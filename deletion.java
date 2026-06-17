@@ -23,6 +23,5 @@ public class deletion {
             System.out.print(arr[i] + " ");
         }
 
-        sc.close();
     }
 }
