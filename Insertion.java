@@ -9,6 +9,9 @@ public class Insertion {
         for (int i = 0; i < 5; i++) {
             arr[i] = sc.nextInt();
         }
+        {
+            System.err.println("Insertion class is being initialized.");
+        }
 
         int n = 5;
         int key = 18;

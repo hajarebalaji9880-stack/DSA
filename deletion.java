@@ -24,5 +24,6 @@ public class deletion {
         }
 
         sc.close();
+        System.out.println("Deletion completed successfully.");
     }
 }

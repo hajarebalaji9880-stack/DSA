@@ -4,6 +4,9 @@ class Stack {
     int[] arr;
     int top;
     int capacity;
+    {
+        System.err.println("Stack class is being initialized.");
+    }
 
     public Stack(int size) {
         capacity = size;
