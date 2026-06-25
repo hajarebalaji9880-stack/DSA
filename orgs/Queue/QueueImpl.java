@@ -1,0 +1,57 @@
+package orgs.Queue;
+class Queue{
+    private int[] arr;
+    private int front;
+    private int rear;
+    private int capacity;
+    public Queue(int size){
+        capacity = size;
+        arr = new int[capacity];
+        front = 0;
+        rear = -1;
+    }
+    public void enqueue(int val){
+        if(rear == capacity - 1){
+            System.out.println("Queue is full");
+        }
+        arr[rear] = val;
+        ++rear;
+    }
+    public int dequeue(){
+        if(front > rear){
+            System.out.println("queue is empty");
+            return -1;
+        }
+        return arr[front++];
+    }
+    public int peak(){
+        if(front>rear){
+            System.out.println("queue is empty");
+            return  -1;
+        }
+        return arr[front];
+    }
+    public boolean isEmpty(){
+        return  front>rear;
+    }
+    public boolean isFull(){
+        return rear == capacity - 1;
+    }
+    public int size(){
+        return rear - front + 1;
+    }
+    public void display(){
+        if(front>rear){
+            System.out.println("queue is empty");
+            return;
+        }
+        for (int i=front;i<=rear;i++){
+
+        }
+    }
+}
+public class QueueImpl {
+    public static void main(String[] args){
+        Queue queue =
+    }
+}
