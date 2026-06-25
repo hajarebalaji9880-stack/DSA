@@ -45,13 +45,22 @@ class Queue{
             System.out.println("queue is empty");
             return;
         }
-        for (int i=front;i<=rear;i++){
-
+        for(int i=front;i<=rear;i++){
+            System.out.println(arr[i]);
         }
     }
 }
 public class QueueImpl {
     public static void main(String[] args){
-        Queue queue =
+        Queue queue = new Queue(10);
+        queue.enqueue(10);
+        queue.enqueue(20);
+        queue.enqueue(30);
+        queue.enqueue(40);
+        queue.enqueue(50);
+        System.out.println(queue.size());
+        System.out.println(queue.peak());
+        System.out.println(queue.dequeue());
+        queue.display();
     }
 }
