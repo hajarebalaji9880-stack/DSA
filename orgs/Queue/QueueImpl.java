@@ -58,6 +58,7 @@ public class QueueImpl {
         queue.enqueue(30);
         queue.enqueue(40);
         queue.enqueue(50);
+        queue.display();
         System.out.println(queue.size());
         System.out.println(queue.peak());
         System.out.println(queue.dequeue());
